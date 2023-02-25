@@ -68,6 +68,70 @@ nav li:not(:last-child) {
 nav a {
   font-size: 1.1rem;
 }
+/* Header section */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 20px;
+    text-align: center;
+  }
+
+  #book-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  #author {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  #header-img {
+    display: none;
+  }
+
+  #menu-btn {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  nav {
+    position: fixed;
+    top: 70px;
+    left: -200px;
+    width: 200px;
+    height: calc(100vh - 70px);
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav.open {
+    left: 0;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav a:hover {
+    background-color: #555;
+  }
+}
 
 /* About section styles */
 
